@@ -1,0 +1,69 @@
+@use 'colors';
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+}
+main{
+    background-color: colors.$very-pale-orange;
+    border-radius: 5px;
+    padding: 15px;
+    .main__chart{
+        @extend %flex;
+        height: 200px;
+        margin-top: 30px;
+        &>*{
+            height: 70px;
+            width: 40px;
+            background-color: colors.$soft-red;
+            border-radius: 5px;
+        }
+        &__max{
+            background-color: colors.$cyan;
+        }
+    }
+    .days{
+        @extend %flex;
+        &>*{
+            width: 40px;
+            text-align: center;
+            font-size: .8rem;
+            padding-top: 10px;
+            color: colors.$medium-brown;
+        }
+    }
+    .main__break{
+        width: 100%;
+        height: 1.5px;
+        margin: 30px 0;
+        background-color: colors.$cream;
+    }
+    .main__foot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__current{
+            &__para{
+                font-size: .8rem;
+                color: colors.$medium-brown;
+            }
+            &__head{
+                margin-top: 10px;
+                color: colors.$dark-brown;
+            }
+        }
+        &__last{
+            font-size: .8rem;
+            text-align: right;
+            &__head{
+                color: colors.$dark-brown;
+                font-weight: bold;
+            }
+            &__para{
+                color: colors.$medium-brown;
+                margin-top: 10px;
+            }
+        }
+    }
+}

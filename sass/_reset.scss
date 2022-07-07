@@ -1,0 +1,27 @@
+@use 'colors';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: colors.$cream;
+}
+
+h1,h2,h3,p,ul,li{
+    margin-top: 0;
+}
